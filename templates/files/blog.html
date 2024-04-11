@@ -27,10 +27,43 @@
                     </ul>
 
                     <div class="main_blog_area">
-                        <div class="single_blog_area">
-                            <div class="row">
 
-                                <!-- there is loop -->
+                        {% for i in posts %}
+                        <!-- there is loop -->
+                        <div class="single_blog_area" style="margin-bottom:1rem;">
+                            <div class="row">
+                                <a href="{%url 'post' i.id %}">
+                                    <div class="col-sm-6">
+                                        <div class="signle_service_left">
+                                            <img src="{{i.image.url}}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-push-1">
+                                        <div class="single_service" align="justify">
+                                            <h4 style="font-size:29px">{{i.title}}</h4>
+                                </a>
+                                <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
+                                <div class="separator2"></div>
+                                <p>
+                                    {{i.step_1 |linebreaksbr | slice:":380"}}
+                                </p>
+
+
+                                <a href="" class="btn btn-default">learn more</a>
+                                </div>
+                                </div>
+
+
+                            </div>
+                        </div><!-- End of single service area -->
+                        {% endfor %}
+
+
+
+
+
+                        <div class="single_blog_area" style="margin-bottom:1rem;">
+                            <div class="row">
 
                                 <div class="col-sm-6">
                                     <div class="signle_service_left">
@@ -60,38 +93,9 @@
                             </div>
                         </div><!-- End of single service area -->
 
-                        <div class="single_blog_area  margin-top-80">
-                            <div class="row">
 
-                                <div class="col-sm-6 col-sm-push-6">
-                                    <div class="signle_service_left">
-                                        <img src="{%static 'assets/images/service0.png'%}" alt="">
-                                    </div>
-                                </div>
 
-                                <div class="col-sm-5 col-sm-pull-6">
-                                    <div class="single_service">
-                                        <h2>installation</h2>
-                                        <h5>11 november 2015</h5>
-                                        <div class="separator2"></div>
-                                        <p>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                        </p>
-
-                                        <p>
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        </p>
-
-                                        <a href="" class="btn btn-default">learn more</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- End of single service area -->
-
-                        <div class="single_blog_area margin-top-80">
+                        <div class="single_blog_area">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="signle_service_left">
@@ -100,7 +104,7 @@
                                 </div>
                                 <div class="col-sm-5 col-sm-push-1">
                                     <div class="single_service">
-                                        <h2>design</h2>
+                                        <h2>kitchen</h2>
                                         <h5>16 november 2015</h5>
                                         <div class="separator2"></div>
                                         <p>
@@ -116,40 +120,14 @@
                                         <a href="" class="btn btn-default">learn more</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- End of single service area -->
 
-
-                        <div class="single_blog_area  margin-top-80">
-                            <div class="row">
-
-                                <div class="col-sm-6 col-sm-push-6">
-                                    <div class="signle_service_left">
-                                        <img src="{%static 'assets/images/service0.png'%}" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-5 col-sm-pull-6">
-                                    <div class="single_service">
-                                        <h2>installation</h2>
-                                        <h5>11 november 2015</h5>
-                                        <div class="separator2"></div>
-                                        <p>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                        </p>
-
-                                        <p>
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        </p>
-
-                                        <a href="" class="btn btn-default">learn more</a>
-                                    </div>
-                                </div>
 
                             </div>
-                        </div><!-- End of single service area -->
+                        </div><!-- ======================================  End of single service area ========================================================================= -->
+
+
+
+
 
                     </div>
 

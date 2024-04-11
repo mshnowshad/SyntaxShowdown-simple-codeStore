@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\programming\\templates\\Portfolio web\\clemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\bloginner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\bloginner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\search.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\search.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\asset\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -19,8 +15,24 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:asset\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\navbar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\navbar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\bloginner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\files\\bloginner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\asset\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:asset\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\programming\\templates\\Portfolio web\\clemo\\asset\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:asset\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,19 +47,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "search.html",
+              "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\search.html",
+              "RelativeDocumentMoniker": "templates\\files\\search.html",
+              "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\search.html",
+              "RelativeToolTip": "templates\\files\\search.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-11T08:47:41.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "contact.html",
+              "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\contact.html",
+              "RelativeDocumentMoniker": "templates\\files\\contact.html",
+              "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\contact.html",
+              "RelativeToolTip": "templates\\files\\contact.html",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwFMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-11T08:43:10.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "admin.py",
+              "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\admin.py",
+              "RelativeDocumentMoniker": "asset\\admin.py",
+              "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\admin.py",
+              "RelativeToolTip": "asset\\admin.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-11T07:51:48.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "models.py",
+              "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\models.py",
+              "RelativeDocumentMoniker": "asset\\models.py",
+              "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\models.py",
+              "RelativeToolTip": "asset\\models.py",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-11T04:00:46.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "bloginner.html",
               "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\bloginner.html",
               "RelativeDocumentMoniker": "templates\\files\\bloginner.html",
               "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\bloginner.html",
               "RelativeToolTip": "templates\\files\\bloginner.html",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGsAAAAAAAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAkwL8AAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-04-10T16:03:20.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "blog.html",
               "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\files\\blog.html",
               "RelativeDocumentMoniker": "templates\\files\\blog.html",
@@ -60,39 +124,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "views.py",
               "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\views.py",
               "RelativeDocumentMoniker": "asset\\views.py",
               "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\views.py",
               "RelativeToolTip": "asset\\views.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-04-10T15:54:21.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "navbar.html",
-              "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\navbar.html",
-              "RelativeDocumentMoniker": "templates\\navbar.html",
-              "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\templates\\navbar.html",
-              "RelativeToolTip": "templates\\navbar.html",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-04-10T15:41:35.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "urls.py",
               "DocumentMoniker": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\urls.py",
               "RelativeDocumentMoniker": "asset\\urls.py",
               "ToolTip": "E:\\programming\\templates\\Portfolio web\\clemo\\asset\\urls.py",
               "RelativeToolTip": "asset\\urls.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-04-10T15:40:57.082Z",
               "EditorCaption": ""

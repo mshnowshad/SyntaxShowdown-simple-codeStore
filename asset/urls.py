@@ -7,9 +7,9 @@ urlpatterns = [
     path('',home,name="home"),
     path('about/',about,name="about"),
     path('blog/',blog,name="blog"),
-    path('post/',post,name="post"),
-    # path('',home,name="home"),
-    # path('',home,name="home"),
+    path('post/<int:pk>',post,name="post"),
+    path('contact/',contact,name="contact"),
+    path('search/',search,name="search"),
     # path('',home,name="home"),
     
 

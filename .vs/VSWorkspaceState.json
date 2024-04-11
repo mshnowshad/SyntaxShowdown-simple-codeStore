@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\asset",
-    "\\static\\assets",
-    "\\static\\assets\\images",
     "\\templates",
     "\\templates\\files"
   ],
-  "SelectedNode": "\\templates\\files\\bloginner.html",
+  "SelectedNode": "\\templates\\navbar.html",
   "PreviewInSolutionExplorer": false
 }

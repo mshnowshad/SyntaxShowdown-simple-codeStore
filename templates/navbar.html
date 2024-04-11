@@ -27,11 +27,14 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="{%url 'about'%}">about us</a></li>
+                                    <li><a href="{%url 'admin:index'%}">admin</a></li>
+
                                     <li class="dropdown">
                                         <a href="{%url 'blog'%}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">blog</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="{%url 'blog'%}">blog page</a></li>
-                                            <li><a href="#">singleblog page</a></li>
+                                            <li><a href="{%url 'search'%}">search post</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="dropdown">
@@ -49,7 +52,7 @@
                                         </ul>
                                     </li>
 
-                                    <li><a href="#">contact</a></li>
+                                    <li><a href="{%url 'contact'%}">contact</a></li>
                                 </ul>
                             </div>
 
