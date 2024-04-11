@@ -8,27 +8,24 @@
 
 
 
-<!-- Blog Section -->
+<!-- searched Section -->
 <section id="blog" class="blog sections margin-top-120">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="head_title text-center">
-                    <h1>blog</h1>
+                    <h1>searching page</h1>
                 </div><!-- End of head title -->
-
                 <div class="row">
 
                     <ul class="list-inline text-center margin-bottom-60">
-                        <li class="filter" data-filter="all">All</li>
-                        <li class="filter creativemenu" data-filter=".category-1">creative kitchen</li>
-                        <li class="filter" data-filter=".category-2">art design</li>
-                        <li class="filter" data-filter=".category-3">life events </li>
+                        <li class="filter" data-filter="all">{{searched}}!</li>
+
                     </ul>
 
                     <div class="main_blog_area">
 
-                        {% for i in posts %}
+                        {% for i in prods %}
                         <!-- there is loop -->
                         <div class="single_blog_area" style="margin-bottom:1rem;">
                             <div class="row">
@@ -38,19 +35,21 @@
                                             <img src="{{i.image.url}}" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-5 col-sm-push-1">
-                                        <div class="single_service" align="justify">
-                                            <h4 style="font-size:29px">{{i.title}}</h4>
                                 </a>
-                                <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
-                                <div class="separator2"></div>
-                                <p>
-                                    {{i.step_1 |linebreaksbr | slice:":380"}}
-                                </p>
+                                <div class="col-sm-5 col-sm-push-1">
+                                    <div class="single_service" align="justify">
+                                        <h4 style="font-size:29px">{{i.title}}</h4>
 
 
-                                <a href="" class="btn btn-default">learn more</a>
-                                </div>
+                                        <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
+                                        <div class="separator2"></div>
+                                        <p>
+                                            {{i.step_1 |linebreaksbr | slice:":380"}}
+                                        </p>
+
+
+                                        <a href="" class="btn btn-default">learn more</a>
+                                    </div>
                                 </div>
 
 
@@ -61,19 +60,26 @@
 
 
 
-<!-- ======================================  End of single service area ========================================================================= -->
 
 
-
+                        <!-- ======================================  End of single service area ========================================================================= -->
 
 
                     </div>
 
+
+
+
+
                 </div>
+
             </div><!-- End of col-sm-12 -->
-        </div><!-- End of row -->
+    </div><!-- End of row -->
     </div><!-- End of Container -->
 </section><!-- End of Service Section -->
 
-{% endblock content%}
+
+
+
+{% endblock content %}
 

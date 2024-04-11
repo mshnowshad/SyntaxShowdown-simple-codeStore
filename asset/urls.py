@@ -10,7 +10,7 @@ urlpatterns = [
     path('post/<int:pk>',post,name="post"),
     path('contact/',contact,name="contact"),
     path('search/',search,name="search"),
-    # path('',home,name="home"),
+    path('searched/',searched,name="searched"),
     
 
 
