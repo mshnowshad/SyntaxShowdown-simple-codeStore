@@ -7,70 +7,360 @@
 {% block content%}
 
 
-
-<!-- Blog Section -->
-<section id="blog" class="blog sections margin-top-120">
+<!-- Service Section -->
+<section id="bloginner" class="bloginner sections margin-top-120">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="head_title text-center">
-                    <h1>blog</h1>
+                    <h1>{{post.title}}</h1><br />
+                    <h6>{{post.upload_in|timesince}} ago</h6>
                 </div><!-- End of head title -->
+                <div class="main_bloginner_area">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="main_bloginner_content">
+                                <div class="single_bloginner s_blogIner_1 text-center">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
 
-                <div class="row">
-
-                    <ul class="list-inline text-center margin-bottom-60">
-                        <li class="filter" data-filter="all">All</li>
-                        <li class="filter creativemenu" data-filter=".category-1">creative kitchen</li>
-                        <li class="filter" data-filter=".category-2">art design</li>
-                        <li class="filter" data-filter=".category-3">life events </li>
-                    </ul>
-
-                    <div class="main_blog_area">
-
-                        {% for i in posts %}
-                        <!-- there is loop -->
-                        <div class="single_blog_area" style="margin-bottom:1rem;">
-                            <div class="row">
-                               
-                                    <div class="col-sm-6">
-                                        <div class="signle_service_left">
-                                            <a href="{%url 'post' i.id %}">
-                                                <img src="{{i.image.url}}" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-5 col-sm-push-1">
-                                        <div class="single_service" align="justify">
-                                            <h4 style="font-size:29px">{{i.title}}</h4>
-                                
-                                            <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
-                                            <div class="separator2"></div>
-                                            <p>
-                                                {{i.step_1 |linebreaksbr | slice:":380"}}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.1</h3>
+                                    <p>
+                                        {{post.step_1|linebreaksbr}}
+                                    </p>
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_1|linebreaksbr}}
                                             </p>
-
-
-                                            <a href="" class="btn btn-default">learn more</a>
                                         </div>
-                                     </div>
 
+                                    </details>
+
+                                </div>
+
+
+                                <!-- there is two -->
+                                {% if post.image_2 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_2.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_2%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.2</h3>
+                                    <p>
+                                        {{post.step_2|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_2 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_2|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+
+
+                                <!-- there is 3 -->
+                                {% if post.image_3 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_3.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_3%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.3</h3>
+                                    <p>
+                                        {{post.step_3|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_3 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_3|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+
+
+                                <!-- there is two -->
+                                {% if post.image_4 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_4.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_4%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.4</h3>
+                                    <p>
+                                        {{post.step_4|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_4 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_4|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+                                <!-- there is two -->
+                                {% if post.image_5 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_5.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_5%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.5</h3>
+                                    <p>
+                                        {{post.step_5|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_5 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_5|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+                                <!-- there is two -->
+                                {% if post.image_6 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_6.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_6%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.6</h3>
+                                    <p>
+                                        {{post.step_6|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_6 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_6|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+                                <!-- there is two -->
+                                {% if post.image_7 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_7.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_7%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.7</h3>
+                                    <p>
+                                        {{post.step_7|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_7 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_7|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+                                <!-- there is two -->
+                                {% if post.image_8 %}
+
+                                <div class="single_bloginner s_blogIner_1 text-center margin-top-60">
+                                    <div class="separator2"></div>image
+                                    <img src="{{post.image_8.url}}" alt="" />
+                                </div><!-- End of single single_bloginner -->
+                                {% else %}
+                                {% endif %}
+
+
+                                {% if post.step_8%}
+                                <div class="single_bloginner s_blogIner_2 margin-top-60">
+                                    <div class="separator2"></div>
+                                    <h3>step.8</h3>
+                                    <p>
+                                        {{post.step_8|linebreaksbr}}
+                                    </p>
+
+                                    {% if post.code_8 %}
+                                    <details>
+                                        <summary>
+                                            <h5>code <i class="fa fa-caret-square-o-down"></i></h5>
+                                        </summary>
+                                        <div style="background-color: #F2E2A8;">
+                                            <p style=" margin-left:8px ">
+                                                {{post.code_8|linebreaksbr}}
+                                            </p>
+                                        </div>
+
+                                    </details>
+                                    {% else %}
+                                    {% endif %}
+
+
+                                </div>
+                                {% else %}
+                                {%endif%}
+
+
+
+
+
+                                <!-- there is end of post -->
 
                             </div>
-                        </div><!-- End of single service area -->
-                        {% endfor %}
-
-
-
-
-<!-- ======================================  End of single service area ========================================================================= -->
-
-
-
-
-
+                        </div>
                     </div>
+                </div>
 
+                <div class="row">
+              
+
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-push-1">
+                            <div class="single_bloginner s_blogIner_5 margin-top-60">
+
+                                <h4>source code here .</h4><br />
+                                <div class="work_socail transition">
+                                    <a href="{{post.source_code}}" target="_blank">
+                                        <i class="fa fas fa-link img-circle"></i>{{post.source_code|slice:':100'}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div><!-- End of col-sm-12 -->
         </div><!-- End of row -->

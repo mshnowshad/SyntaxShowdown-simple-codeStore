@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\static\\assets",
-    "\\static\\assets\\images",
+    "\\asset",
     "\\templates",
     "\\templates\\files"
   ],
-  "SelectedNode": "\\templates\\navbar.html",
+  "SelectedNode": "\\asset\\models.py",
   "PreviewInSolutionExplorer": false
 }

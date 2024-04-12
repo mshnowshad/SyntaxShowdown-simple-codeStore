@@ -20,9 +20,17 @@ def search(request):
     return render(request,'files/search.html')
 
 def works(request):
-    return render(request,'files/works.html')
-def work(request):
-    return render(request,'files/work.html')
+    works = Works.objects.all()
+    
+    dic = {
+        'works':works,
+        }
+    return render(request,'files/works.html',dic)
+
+
+def work(request,wk):
+    work = Works.objects.get(id=wk)
+    return render(request,'files/work.html',{'work':work})
 
 def blog(request):
     posts = Post.objects.all()
@@ -31,7 +39,7 @@ def blog(request):
     dic = {
         'posts':posts,
         }
-    return render(request,'files/blog.html',dic)
+    return render(request,'files/blogs.html',dic)
 
 def post(request,pk):
     post = Post.objects.get(id=pk)
@@ -39,9 +47,7 @@ def post(request,pk):
     dic = {
         'post':post,
         }
-    return render(request,'files/bloginner.html',dic)
-
-
+    return render(request,'files/blog.html',dic)
 
 
 def searched(request):

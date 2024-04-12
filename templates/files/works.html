@@ -9,88 +9,64 @@
 
 
 
-<!-- Work Section -->
-<section id="work" class="work sections">
+<!-- Blog Section -->
+<section id="blog" class="blog sections margin-top-120">
     <div class="container">
         <div class="row">
-            <div class="main_mix_content text-center margin-top-120">
-                <div class="head_title">
+            <div class="col-sm-12">
+                <div class="head_title text-center">
                     <h1>works</h1>
                 </div><!-- End of head title -->
 
+                <div class="row">
 
-                <div id="mixcontent" class="mixcontent text-center">
+                    <ul class="list-inline text-center margin-bottom-60">
+                        <li class="filter" data-filter="all">All</li>
+                        <li class="filter creativemenu" data-filter=".category-1">creative kitchen</li>
+                        <li class="filter" data-filter=".category-2">art design</li>
+                        <li class="filter" data-filter=".category-3">life events </li>
+                    </ul>
+
+                    <div class="main_blog_area">
+
+                        <div class="single_blog_area  margin-top-80">
 
 
-                    <div class="col-sm-4 col-xs-12 mix category-1">
-                        <div class="single_mixi_portfolio">
-                            <img src="{% static 'assets/images/pf01.png'%}" alt="" />
-                            <div class="single_work_overlay">
-                                <h4>
-                                    golfino
-                                    awards
-                                </h4>
-                                <div class="separator"></div>
-                                <p>print design</p>
+                            {% for i in works %}
+                            <div class="row" style="margin-bottom:1rem;">
+                                <div class="col-sm-6 col-sm-push-6">
+                                    <a href="{% url 'work' i.id %}">
+                                        <div class="signle_service_left">
+                                            <img src="{{i.image0.url}}" width="560" height="500" alt="">
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <div class="col-sm-5 col-sm-pull-6">
+                                    <div class="single_service">
+                                        <a href="{% url 'work' i.id %}">
+                                            <h4 style="font-size:29px">{{i.title}}</h4>
+                                        </a>
+                                        <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
+                                        <div class="separator2"></div>
+                                        <p align="justify">
+                                            {{i.description |linebreaksbr | slice:":520"}}..
+                                        </p>
+
+                                        <a href="{% url 'work' i.id %}" class="btn btn-default">learn more</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            {% endfor %}
+
+                        </div><!-- End of single service area -->
+
                     </div>
-
-
-                    <!-- there -->
-
-
-                    <div class="col-sm-4 col-xs-12 mix category-2">
-                        <div class="single_mixi_portfolio">
-                            <img src="{% static 'assets/images/pf5.png'%}" alt="" />
-                            <div class="single_work_overlay">
-                                <h4>
-                                    golfino
-                                    awards
-                                </h4>
-                                <div class="separator"></div>
-                                <p>print design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12 mix category-2">
-                        <div class="single_mixi_portfolio">
-                            <img src="{% static 'assets/images/pf5.png'%}" alt="" />
-                            <div class="single_work_overlay">
-                                <h4>
-                                    golfino
-                                    awards
-                                </h4>
-                                <div class="separator"></div>
-                                <p>print design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12 mix category-2">
-                        <div class="single_mixi_portfolio">
-                            <img src="{% static 'assets/images/pf5.png'%}" alt="" />
-                            <div class="single_work_overlay">
-                                <h4>
-                                    golfino
-                                    awards
-                                </h4>
-                                <div class="separator"></div>
-                                <p>print design</p>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-
-                <a href="" class="btn">learn more</a>
-            </div>
+            </div><!-- End of col-sm-12 -->
         </div><!-- End of row -->
-    </div><!-- End of Contaier -->
-</section><!-- End of portfolio Section -->
-<!-- footer Section -->
-
-
+    </div><!-- End of Container -->
+</section><!-- End of Service Section -->
 {% endblock content%}

@@ -1,4 +1,5 @@
-﻿from django.db import models
+﻿from email.policy import default
+from django.db import models
 
 # Create your models here.
 
@@ -61,8 +62,40 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
-    
+   
+class CategoryWork(models.Model):
+    name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'category_works'
+
+
+class Works(models.Model):
+    title = models.CharField(max_length=30000)
+    work_time = models.CharField(max_length=3000,default="",blank=True, null=True)
+    category = models.ForeignKey(CategoryWork, on_delete=models.CASCADE)  # Removed default value
+    image0 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    image1 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    image2 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    image3 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    image4 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    image5 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
+    description = models.TextField(default='', blank=True, null=True)
+    tools = models.TextField(default='', blank=True, null=True)
+    web_link = models.URLField(max_length=10000, blank=True, null=True)
+    source_code = models.URLField(max_length=10000, blank=True, null=True) #<----এটি মানে হল ফিল্ডটি ফর্মে একটি মান প্রবেশ করার জন্য বাধ্যতা নেই। অর্থাৎ, ফিল্ডটি খালি অথবা মান না দিয়েও ফর্ম সাবমিট করা যাবে।
+    upload_in = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ('-upload_in',)
+        verbose_name_plural = 'Works'
+    
+    def __str__(self):
+        return self.title
+    
     
     
 

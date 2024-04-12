@@ -12,7 +12,7 @@ urlpatterns = [
     path('search/',search,name="search"),
     path('searched/',searched,name="searched"),
     path('works/',works,name="works"),
-    path('work/',work,name="work"),
+    path('work/<int:wk>',work,name="work"),
     
     # path('searched/',searched,name="searched"),
     # path('searched/',searched,name="searched"),
