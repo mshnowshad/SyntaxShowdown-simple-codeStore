@@ -19,6 +19,10 @@ def contact(request):
 def search(request):
     return render(request,'files/search.html')
 
+def works(request):
+    return render(request,'files/works.html')
+def work(request):
+    return render(request,'files/work.html')
 
 def blog(request):
     posts = Post.objects.all()
@@ -48,12 +52,8 @@ def searched(request):
             Q(tags__icontains=searched) |
             Q(category__name__icontains=searched)
         )
-        
-        if not prods:
-            messages.success(request, "Hmm, Your Searched Item Isn't in Our Blog. Keep Scrolling for More!")  # Corrected error message
-            return redirect('home')
-        else:
-            return render(request, 'files/searched.html', {'searched': searched, 'prods': prods})
+        return render(request, 'files/searched.html', {'searched': searched, 'prods': prods})
+    
     else:
         return render(request, 'files/searched.html')
 

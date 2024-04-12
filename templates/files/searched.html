@@ -16,6 +16,7 @@
                 <div class="head_title text-center">
                     <h1>searching page</h1>
                 </div><!-- End of head title -->
+                {% if prods %}
                 <div class="row">
 
                     <ul class="list-inline text-center margin-bottom-60">
@@ -56,22 +57,17 @@
                             </div>
                         </div><!-- End of single service area -->
                         {% endfor %}
-
-
-
-
-
-
                         <!-- ======================================  End of single service area ========================================================================= -->
-
-
                     </div>
 
-
-
-
-
                 </div>
+                {% else %}
+
+                <div class="head_title text-center">
+                    <h4>this post not in blog</h4>
+                </div>
+                {% endif %}
+
 
             </div><!-- End of col-sm-12 -->
     </div><!-- End of row -->
