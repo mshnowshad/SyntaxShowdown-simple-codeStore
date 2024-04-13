@@ -36,7 +36,7 @@
                                     <div class="col-sm-6">
                                         <div class="signle_service_left">
                                             <a href="{%url 'post' i.id %}">
-                                                <img src="{{i.image.url}}" alt="">
+                                                <img src="{{i.image.url}}" width="560" height="300" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@
                                             <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
                                             <div class="separator2"></div>
                                             <p>
-                                                {{i.step_1 |linebreaksbr | slice:":380"}}
+                                                {{i.step_1 |linebreaksbr | slice:":200"}} ....
                                             </p>
 
 

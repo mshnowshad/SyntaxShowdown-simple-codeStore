@@ -7,6 +7,13 @@ from django.db.models import Q
 # Create your views here.
 
 def home(request):
+    if request.method == "POST":
+            name = request.POST.get('name')
+            email = request.POST.get('email')
+            mobile = request.POST.get('mobile')
+            desc = request.POST.get('desc')
+            contact = Contact(name=name, email=email, mobile=mobile, desc=desc)
+            contact.save()
     return render(request,'files/index.html')
 
 def about(request):
@@ -14,10 +21,28 @@ def about(request):
 
 
 def contact(request):
+    if request.method == "POST":
+            name = request.POST.get('name')
+            email = request.POST.get('email')
+            mobile = request.POST.get('mobile')
+            desc = request.POST.get('desc')
+            contact = Contact(name=name, email=email, subject=mobile, desc=desc)
+            contact.save()
+            
     return render(request,'files/contact.html')
 
 def search(request):
     return render(request,'files/search.html')
+
+def thanku(request):
+    if request.method == "POST":
+            name = request.POST.get('name')
+            email = request.POST.get('email')
+            mobile = request.POST.get('mobile')
+            desc = request.POST.get('desc')
+            contact = Contact(name=name, email=email, mobile=mobile, desc=desc)
+            contact.save()
+    return render(request,'files/thanku.html')
 
 def works(request):
     works = Works.objects.all()

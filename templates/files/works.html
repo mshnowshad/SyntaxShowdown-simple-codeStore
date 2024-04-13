@@ -37,7 +37,7 @@
                                 <div class="col-sm-6 col-sm-push-6">
                                     <a href="{% url 'work' i.id %}">
                                         <div class="signle_service_left">
-                                            <img src="{{i.image0.url}}" width="560" height="500" alt="">
+                                            <img src="{{i.image0.url}}" width="560" height="300" alt="">
                                         </div>
                                     </a>
 
@@ -50,9 +50,11 @@
                                         </a>
                                         <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
                                         <div class="separator2"></div>
-                                        <p align="justify">
-                                            {{i.description |linebreaksbr | slice:":520"}}..
-                                        </p>
+                                        
+                                            <p align="justify">
+                                                {{i.description |linebreaksbr | slice:":270"}}......<a href="{% url 'work' i.id %}">more</a>
+</p>
+                                        
 
                                         <a href="{% url 'work' i.id %}" class="btn btn-default">learn more</a>
                                     </div>
