@@ -17,7 +17,8 @@ def home(request):
     return render(request,'files/index.html')
 
 def about(request):
-    return render(request,'files/aboutus.html')
+    counts = CounterSection.objects.all()
+    return render(request,'files/aboutus.html',{'counts':counts})
 
 
 def contact(request):

@@ -1,6 +1,6 @@
 from turtle import pos
 from django.contrib import admin
-from .models import Category,Post,CategoryWork,Works,Contact
+from .models import Category,Post,CategoryWork,Works,Contact,CounterSection
 # Register your models here.
 
 
@@ -9,6 +9,8 @@ admin.site.register(CategoryWork)
 admin.site.register(Post)
 admin.site.register(Works)
 admin.site.register(Contact)
+admin.site.register(CounterSection)
+
 
 
 

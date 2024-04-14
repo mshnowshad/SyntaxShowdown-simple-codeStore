@@ -72,9 +72,10 @@
             <div class="col-sm-12">
                 <div class="main_counter sections text-center">
                     <div class="row">
+                        {% for i in counts %}
                         <div class="col-sm-4 col-xs-12">
                             <div class="single_counter_right">
-                                <h4 class="statistic-counter">10</h4>
+                                <h4 class="statistic-counter">{{i.project_complete}}</h4>
                                 <div class="separator"></div>
                                 <p>project complete</p>
                             </div>
@@ -82,102 +83,28 @@
 
                         <div class="col-sm-4 col-xs-12">
                             <div class="single_counter_right">
-                                <h4 class="statistic-counter">18</h4>
+                                <h4 class="statistic-counter">{{i.project_running}}</h4>
                                 <div class="separator"></div>
-                                <p>happy clients</p>
+                                <p>project running</p>
                             </div>
                         </div><!-- End of col-sm-4 -->
 
                         <div class="col-sm-4 col-xs-12">
                             <div class="single_counter_right">
-                                <h4 class="statistic-counter">20</h4>
+                                <h4 class="statistic-counter">{{i.clients}}</h4>
                                 <div class="separator"></div>
                                 <p>clients</p>
                             </div>
                         </div><!-- End of col-sm-4 -->
-
+                    {% endfor %}
                     </div><!-- End of row -->
                 </div>
             </div><!-- End of col-sm-12 -->
         </div><!-- End of row -->
     </div><!-- End of Container -->
 </section><!-- End of counter Section -->
-<!-- Team Section -->
-<section id="team" class="team colorsbg sections">
-    <div class="container">
-        <div class="row">
-            <div class="main_team_area">
-                <div class="head_title text-center">
-                    <h1>best team</h1>
-                </div><!-- End of head title -->
 
-                <div class="main_team text-center">
-                    <div class="single_team">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team1.jpg'%}" alt="" />
-                                        <h4>paul hall</h4>
-                                        <div class="separator"></div>
-                                        <p>art director</p>
-                                    </div>
-                                </div> <!-- End of col-sm-4 -->
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team2.jpg'%}" alt="" />
-                                        <h4>joshua spencer</h4>
-                                        <div class="separator"></div>
-                                        <p>founder</p>
-                                    </div>
-                                </div> <!-- End of col-sm-4 -->
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team3.jpg'%}" alt="" />
-                                        <h4>diane lewis</h4>
-                                        <div class="separator"></div>
-                                        <p>artist, designer</p>
-                                    </div>
-                                </div><!-- End of col-sm-4 -->
-                            </div>
-                        </div><!-- End of col-sm-10 -->
-                    </div>
-                    <div class="single_team">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team1.jpg'%}" alt="" />
-                                        <h4>paul hall</h4>
-                                        <div class="separator"></div>
-                                        <p>art director</p>
-                                    </div>
-                                </div> <!-- End of col-sm-4 -->
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team2.jpg'%}" alt="" />
-                                        <h4>joshua spencer</h4>
-                                        <div class="separator"></div>
-                                        <p>founder</p>
-                                    </div>
-                                </div><!-- End of col-sm-4 -->
-                                <div class="col-sm-4">
-                                    <div class="team">
-                                        <img class="img-circle" src="{%static 'assets/images/team1.jpg'%}" alt="" />
-                                        <h4>diane lewis</h4>
-                                        <div class="separator"></div>
-                                        <p>artist, designer</p>
-                                    </div>
-                                </div> <!-- End of col-sm-4 -->
-                            </div>
-                        </div><!-- End of col-sm-10 -->
-                    </div>
 
-                </div>
-            </div>
-        </div><!-- End of row -->
-    </div><!-- End of Contaier -->
-</section><!-- End of portfolio Section -->
-<!-- Clients Section -->
+
 {% endblock content%}
 
