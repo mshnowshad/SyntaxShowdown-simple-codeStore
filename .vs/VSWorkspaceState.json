@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\templates\\files"
+    "\\setting"
   ],
-  "SelectedNode": "\\templates",
+  "SelectedNode": "\\setting\\settings.py",
   "PreviewInSolutionExplorer": false
 }
