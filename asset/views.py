@@ -3,8 +3,7 @@ from .models import *
 from django.core.paginator import Paginator
 from django.contrib import messages
 from django.db.models import Q
-
-# Create your views here.
+from .forms import WorksForm
 
 def home(request):
     if request.method == "POST":

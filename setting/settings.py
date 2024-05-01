@@ -142,3 +142,18 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/dev/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+# there is my jazzmin admin panel customizeations
+JAZZMIN_UI_TWEAKS = {
+    "theme": "simplex",
+}
+
+JAZZMIN_SETTINGS = {
+	"site_title": "$yntax$howdown",
+	"site_brand": "$yntax$howdown",
+   	"site_logo": "favicon_io/apple-touch-icon.png",
+    "welcome_sign": "$yntax$howdown Admin Access Granted!",
+}

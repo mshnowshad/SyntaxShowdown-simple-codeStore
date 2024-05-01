@@ -32,28 +32,28 @@
                         <!-- there is loop -->
                         <div class="single_blog_area" style="margin-bottom:.3rem;">
                             <div class="row">
-                               
-                                    <div class="col-sm-6">
-                                        <div class="signle_service_left">
-                                            <a href="{%url 'post' i.id %}">
-                                                <img src="{{i.image.url}}" width="560" height="300" alt="">
-                                            </a>
-                                        </div>
+
+                                <div class="col-sm-6">
+                                    <div class="signle_service_left">
+                                        <a href="{%url 'post' i.id %}">
+                                            <img src="{{i.image.url}}" width="560" height="300" alt="">
+                                        </a>
                                     </div>
-                                    <div class="col-sm-5 col-sm-push-1">
-                                        <div class="single_service" align="justify">
+                                </div>
+                                <div class="col-sm-5 col-sm-push-1">
+                                    <div class="single_service" align="justify">
+                                        <div class="separator2"></div>
+                                        <a href="{%url 'post' i.id %}">
                                             <h4 style="font-size:29px">{{i.title}}</h4>
-                                
-                                            <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
-                                            <div class="separator2"></div>
-                                            <p>
-                                                {{i.step_1 |linebreaksbr | slice:":200"}} ....
-                                            </p>
+                                        </a>
 
-
-                                            <a href="{%url 'post' i.id %}" class="btn btn-default">learn more</a>
-                                        </div>
-                                     </div>
+                                        <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a href="{%url 'post' i.id %}" class="btn btn-default">learn more</a>
+                                    </div>
+                                </div>
 
 
                             </div>
@@ -63,7 +63,7 @@
 
 
 
-<!-- ======================================  End of single service area ========================================================================= -->
+                        <!-- ======================================  End of single service area ========================================================================= -->
 
 
 
@@ -78,4 +78,3 @@
 </section><!-- End of Service Section -->
 
 {% endblock content%}
-

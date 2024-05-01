@@ -18,6 +18,7 @@
                     <h1>works</h1>
                 </div><!-- End of head title -->
 
+                {% if works %}
                 <div class="row">
                     <!-- there is category -->
                     <!--<ul class="list-inline text-center margin-bottom-60">
@@ -45,17 +46,14 @@
 
                                 <div class="col-sm-5 col-sm-pull-6">
                                     <div class="single_service">
+                                        <div class="separator2"></div>
                                         <a href="{% url 'work' i.id %}">
                                             <h4 style="font-size:29px">{{i.title}}</h4>
                                         </a>
                                         <h9 style="font-size:15px">{{i.upload_in|timesince}} ago</h9>
-                                        <div class="separator2"></div>
-                                        
-                                            <p align="justify">
-                                                {{i.description |linebreaksbr | slice:":270"}}......<a href="{% url 'work' i.id %}">more</a>
-</p>
-                                        
-
+                                        <br>
+                                        <br>
+                                        <br>
                                         <a href="{% url 'work' i.id %}" class="btn btn-default">learn more</a>
                                     </div>
                                 </div>
@@ -67,6 +65,19 @@
 
                     </div>
                 </div>
+                {% else %}
+
+                <div class="text-center">
+                    <h3>
+                        no works items..<br>
+                        add the item in works.
+                    </h3>
+                </div><!-- End of head title -->
+
+                {% endif %}
+
+
+
             </div><!-- End of col-sm-12 -->
         </div><!-- End of row -->
     </div><!-- End of Container -->

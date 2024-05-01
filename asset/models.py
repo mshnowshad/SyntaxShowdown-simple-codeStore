@@ -1,6 +1,5 @@
 ﻿
 from django.db import models
-
 # Create your models here.
 
 
@@ -16,11 +15,11 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=3000)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)  # Removed default value
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)  # Removed default value
     image = models.ImageField(upload_to='uploads/post/', blank=False, null=False)
     check_1 = models.BooleanField(default=True)
-    step_1 = models.TextField(default='', blank=False, null=False)
-    code_1 = models.TextField(default='', blank=False, null=False)
+    step_1 = models.TextField(default='', blank=True, null=True)
+    code_1 = models.TextField(default='', blank=True, null=True)
     check_2 = models.BooleanField(default=False)
     image_2 = models.ImageField(upload_to='uploads/post/', blank=True, null=True)
     step_2 = models.TextField(default='', blank=True, null=True)
@@ -76,7 +75,7 @@ class CategoryWork(models.Model):
 class Works(models.Model):
     title = models.CharField(max_length=30000)
     work_time = models.CharField(max_length=3000,default="",blank=True, null=True)
-    category = models.ForeignKey(CategoryWork, on_delete=models.CASCADE)  # Removed default value
+    category = models.ForeignKey(CategoryWork, on_delete=models.CASCADE,blank=True, null=True)  # Removed default value
     image0 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
     image1 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
     image2 = models.ImageField(upload_to='uploads/works/', blank=True, null=True)
